@@ -1200,6 +1200,16 @@ void Spell::EffectDummy(SpellEffectIndex eff_idx)
                     m_caster->CastSpell(m_caster, 34819, true); // Summon 20078 front of the caster
                     return;
                 }
+                case 34830:                                 // Triangulation Device for quest 10269
+                {
+                    m_caster->SetFacingTo(m_caster->GetAngle(4199.7, 1766.4));
+                    return;
+                }
+                case 34857:                                 // Triangulation Device for quest 10275
+                {
+                    m_caster->SetFacingTo(m_caster->GetAngle(3923.0, 3873.4));
+                    return;
+                }
                 case 36677:                                 // Chaos Breath
                 {
                     if (!unitTarget)
